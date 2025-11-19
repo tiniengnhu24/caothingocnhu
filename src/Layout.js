@@ -31,7 +31,7 @@ const Layout = () => {
                   <a href="/#">TRANG CHỦ</a>
                 </li>
                 <li>
-                  <a href="/trang1">EGOV</a>
+                  <a href="/trang1">SẢN PHẨM</a>
                 </li>
                 <li>
                   <a href="/admin/products">QUẢN TRỊ</a>
@@ -41,8 +41,13 @@ const Layout = () => {
             <div id="logo" class="logo1">
               <img src={anhlogo} width="548" />
             </div>
-            <div id="divtimkiem" style={{ width: "300px" }}>
-              Phần tìm kiếm
+            <div id="divtimkiem" className="search-box">
+              <input
+                type="text"
+                placeholder="Tìm sản phẩm..."
+                className="search-input"
+              />
+              <button className="search-btn">🔍</button>
             </div>
           </div>
           <div id="menubar" className="menubar">
