@@ -36,7 +36,7 @@ import EditProduct from "./EditProduct";
 //@ts-ignore
 import Menu1 from "./Menu1";
 //@ts-ignore
-
+import CoffeePage from "./CoffeePage";
 export default function App() {
   // return <Layout />;
 
@@ -52,6 +52,7 @@ export default function App() {
           <Route path="sanpham/:id" element={<Chitietsanpham />} />
           <Route path="/admin/edit/:id" element={<EditProduct />} />
           <Route path="/menu1" element={<Menu1 />} />
+          <Route path="coffee" element={<CoffeePage />} />
 
           {/* <Route path="detail/:id" element={<ProductDetail />} /> */}
 

@@ -55,11 +55,11 @@ const Layout = () => {
               <a href="/menu1" className="menu-item">
                 Menu Cà Phê
               </a>
-              <a href="/menu2" className="menu-item">
-                Menu 2
+              <a href="/coffee" className="menu-item">
+                Cà phê
               </a>
               <a href="/menu3" className="menu-item">
-                Menu 3
+                Liên Hệ
               </a>
             </div>
 
