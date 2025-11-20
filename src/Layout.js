@@ -56,7 +56,7 @@ const Layout = () => {
                 Menu Cà Phê
               </a>
               <a href="/coffee" className="menu-item">
-                Cà phê
+                Giới Thiệu Cà phê
               </a>
               <a href="/menu3" className="menu-item">
                 Liên Hệ

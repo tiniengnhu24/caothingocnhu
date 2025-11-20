@@ -27,7 +27,7 @@ export default function Menu1() {
 
   return (
     <div className="container">
-      <h2 style={{ marginBottom: "20px" }}>Menu 1 – Danh sách sản phẩm</h2>
+      <h2 style={{ marginBottom: "20px" }}> Danh sách các loại cà phê</h2>
 
       <table className="product-table">
         <thead>
