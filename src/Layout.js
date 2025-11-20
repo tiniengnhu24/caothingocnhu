@@ -31,7 +31,7 @@ const Layout = () => {
                   <a href="/#">TRANG CHỦ</a>
                 </li>
                 <li>
-                  <a href="/trang1">SẢN PHẨM</a>
+                  <a href="/menu1">SẢN PHẨM</a>
                 </li>
                 <li>
                   <a href="/admin/products">QUẢN TRỊ</a>
@@ -53,7 +53,7 @@ const Layout = () => {
           <div id="menubar" className="menubar">
             <div className="menubar-left">
               <a href="/menu1" className="menu-item">
-                Menu 1
+                Menu Cà Phê
               </a>
               <a href="/menu2" className="menu-item">
                 Menu 2
@@ -66,7 +66,7 @@ const Layout = () => {
             <div className="menubar-right">
               {user ? (
                 <>
-                  <span className="username">👤 {user.username}</span>
+                  <span className="username">người dùng {user.username}</span>
                   <button className="logout-btn" onClick={handleLogout}>
                     Đăng xuất
                   </button>

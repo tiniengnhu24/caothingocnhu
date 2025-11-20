@@ -25,6 +25,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //@ts-ignore
 import LoginPage from "./LoginPage";
 //@ts-ignore
+
 import LogoutPage from "./LogoutPage";
 //@ts-ignore
 import ProtectedRoute from "./ProtectedRoute";
@@ -32,6 +33,9 @@ import ProtectedRoute from "./ProtectedRoute";
 import ListProducts_SP_Admin from "./ListProducts_SP_Admin";
 //@ts-ignore
 import EditProduct from "./EditProduct";
+//@ts-ignore
+import Menu1 from "./Menu1";
+//@ts-ignore
 
 export default function App() {
   // return <Layout />;
@@ -47,6 +51,7 @@ export default function App() {
           <Route path="trang2" element={<Trang2 />} />
           <Route path="sanpham/:id" element={<Chitietsanpham />} />
           <Route path="/admin/edit/:id" element={<EditProduct />} />
+          <Route path="/menu1" element={<Menu1 />} />
 
           {/* <Route path="detail/:id" element={<ProductDetail />} /> */}
 
