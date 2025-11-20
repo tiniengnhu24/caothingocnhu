@@ -1,5 +1,5 @@
 import "./assets/css/main.css";
-import anhlogo from "./assets/images//Ten-truong-do-1000x159.png";
+import anhlogo from "./assets/images//coffee.png";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -39,7 +39,7 @@ const Layout = () => {
               </ul>
             </div>
             <div id="logo" class="logo1">
-              <img src={anhlogo} width="548" />
+              <img src={anhlogo} width="250" />
             </div>
             <div id="divtimkiem" className="search-box">
               <input

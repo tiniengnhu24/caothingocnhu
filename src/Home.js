@@ -27,7 +27,7 @@ const Home = () => {
       </div>
 
       <h2 style={{ textAlign: "center", marginBottom: "10px" }}>
-        👋 Chào đến web của Cao Ngọc Như nhoe
+        👋 Chào đến web bán cà phê của Cao Ngọc Như nhoe
       </h2>
 
       <p style={{ textAlign: "center", color: "#555", fontSize: "18px" }}>
