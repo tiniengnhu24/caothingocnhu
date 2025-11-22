@@ -128,3 +128,25 @@ body {
 .login-link:hover {
   text-decoration: underline;
 }
+.cart-link {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+.cart-link:hover {
+  color: #a0522d;
+}
+
+.cart-badge {
+  background: red;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  right: -12px;
+}

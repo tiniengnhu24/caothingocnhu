@@ -1,47 +1,121 @@
+/* Container */
 .coffee-container {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.title {
   text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #3b3b3b;
 }
 
-.coffee-container h1 {
-  margin-bottom: 30px;
-  color: #444;
-}
-
-.coffee-grid {
+/* GRID 2 CARD / ROW */
+.row-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 25px;
 }
 
-.coffee-card {
+/* HORIZONTAL CARD */
+.row-card {
+  display: flex;
+  align-items: center;
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+  height: 170px;
 }
 
-.coffee-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+.row-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.coffee-card img {
-  width: 100%;
-  height: 180px;
+/* IMAGE */
+.row-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
-.coffee-card h3 {
-  margin: 12px 0 6px;
-  color: #1a73e8;
+/* INFO RIGHT */
+.row-info {
+  flex: 1;
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
 }
 
-.coffee-card p {
-  padding: 0 12px 16px;
-  color: #555;
+.row-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+}
+
+.row-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #d35400;
+  margin: 4px 0;
+}
+
+.row-rating {
   font-size: 14px;
+  color: #777;
+}
+
+/* BUTTON */
+.row-add-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.25s;
+  align-self: flex-start;
+}
+
+.row-add-btn:hover {
+  background: #3e8e41;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .row-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row-card {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .row-img {
+    margin-bottom: 12px;
+  }
+
+  .row-info {
+    height: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .row-add-btn {
+    align-self: center;
+  }
 }
