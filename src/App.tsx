@@ -50,7 +50,6 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           {/* Trang chính (cho người dùng vãng lai) */}
           <Route index element={<Home />} />
-
           <Route path="trang2" element={<Trang2 />} />
           <Route path="sanpham/:id" element={<Chitietsanpham />} />
           <Route path="/admin/edit/:id" element={<EditProduct />} />
