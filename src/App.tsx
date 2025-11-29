@@ -39,6 +39,8 @@ import CoffeePage from "./CoffeePage";
 //@ts-ignore
 import ContactPage from "./ContactPage";
 //@ts-ignore
+import ChatPage from "./ChatPage"; // ✅ Import trang Chat
+//@ts-ignore
 import Cart from "./Cart";
 export default function App() {
   // return <Layout />;
@@ -57,6 +59,7 @@ export default function App() {
           <Route path="coffee" element={<CoffeePage />} />
           <Route path="/menu3" element={<ContactPage />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="chat" element={<ChatPage />} />
 
           {/* <Route path="detail/:id" element={<ProductDetail />} /> */}
 

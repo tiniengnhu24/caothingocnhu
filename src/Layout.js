@@ -74,6 +74,9 @@ const Layout = () => {
 
           <div id="menubar" className="menubar">
             <div className="menubar-left">
+              <a href="/chat" className="menu-item">
+                Chat với AI
+              </a>
               <a href="/menu1" className="menu-item">
                 Menu Cà Phê
               </a>
